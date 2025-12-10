@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul KR | AI & DS Engineer Portfolio</title>
+    <!-- Favicon: A simple Data Science icon (RK for Rahul KR) -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVOR0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAADz3iPSAAAACHRFWHRTb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zKt4oAAACASURBVDjL7ZLRCoAgDETR6m09h2zP9b0h0j0d70sW3h23C472JIgQBCgK/i9wRzPZg10+v4nL0/lD/1N5rJd8/wD4W/L0A9b8B81QAAAAASUVORK5CYII=">
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 4px;
+            background-color: #3b82f6; /* Blue-500 */
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-blue-400">RAHUL KR</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#education" class="hover:text-blue-400 transition-colors">Education</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+            <!-- Mobile Menu Placeholder (Not functional in single HTML file, but good for design) -->
+            <button class="md:hidden text-gray-100 hover:text-blue-400 transition-colors">
+                <!-- SVG for Menu Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Hero/About Section: Now full-width -->
+        <section id="about" class="pt-8 flex flex-col justify-start">
+            <div class="w-full">
+                <p class="text-xl text-gray-400 mb-2">👋 Hello, I'm</p>
+                <h1 class="text-5xl sm:text-7xl font-extrabold leading-tight text-white mb-4">RAHUL KR</h1>
+                <h2 class="text-2xl text-blue-400 font-medium mb-6">AI & DS Engineering Student</h2>
+                <p class="text-lg text-gray-300 mb-8 max-w-xl">
+                    Motivated and adaptable engineering student seeking opportunities in real-world challenges. Eager to contribute to innovative projects, work in collaborative teams, and continuously grow through learning and problem-solving.
+                </p>
+
+                <div class="flex space-x-4">
+                    <!-- Links to Contact Section -->
+                    <a href="#contact" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors">
+                        Get In Touch
+                    </a>
+                    <!-- Resume PDF link -->
+                    <a href="https://drive.google.com/file/d/17YlFKuGaq93PCd6Quu3QrA6eY1TmiyVx/view?usp=drive_link" target="_blank" class="px-6 py-3 bg-gray-700 text-gray-200 font-semibold rounded-lg shadow-lg hover:bg-gray-600 transition-colors">
+                        View Resume (PDF)
+                    </a>
+                </div>
+            </div>
+            <!-- Profile Photo section removed entirely -->
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title text-4xl font-bold text-white">Skills & Technologies</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Skill Card Template -->
+                <div class="p-4 bg-gray-800 rounded-xl shadow-xl hover:shadow-blue-500/50 transition-shadow duration-300 transform hover:-translate-y-1">
+                    <p class="font-semibold text-blue-300">Programming Languages</p>
+                    <p class="text-gray-300 mt-1">Python, Java, C</p>
+                </div>
+                <div class="p-4 bg-gray-800 rounded-xl shadow-xl hover:shadow-blue-500/50 transition-shadow duration-300 transform hover:-translate-y-1">
+                    <p class="font-semibold text-blue-300">Cloud & Data</p>
+                    <p class="text-gray-300 mt-1">AWS, MySQL, NumPy, Pandas</p>
+                </div>
+                <div class="p-4 bg-gray-800 rounded-xl shadow-xl hover:shadow-blue-500/50 transition-shadow duration-300 transform hover:-translate-y-1">
+                    <p class="font-semibold text-blue-300">Tools & Frameworks</p>
+                    <p class="text-300 mt-1">Git, GitHub, VS Code, Jupyter</p>
+                </div>
+                <div class="p-4 bg-gray-800 rounded-xl shadow-xl hover:shadow-blue-500/50 transition-shadow duration-300 transform hover:-translate-y-1">
+                    <p class="font-semibold text-blue-300">Concepts</p>
+                    <p class="text-gray-300 mt-1">ML, Backtracking, TF-IDF, LexRank</p>
+                </div>
+                <div class="p-4 bg-gray-800 rounded-xl shadow-xl hover:shadow-blue-500/50 transition-shadow duration-300 transform hover:-translate-y-1">
+                    <p class="font-semibold text-blue-300">Web/CMS</p>
+                    <p class="text-gray-300 mt-1">WordPress, SEO</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title text-4xl font-bold text-white">Featured Projects</h2>
+            <div class="space-y-12">
+
+                <!-- Project Card 1: Hospital Website (Enhanced with structured details) -->
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-2">Freelance Project: Hospital Website with Payments</h3>
+                    <p class="text-gray-300 mb-4 font-medium">A complete, responsive, SEO-friendly website for a diagnostic center, focused on enabling seamless digital service access and payment integration.</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 ml-4 mb-4">
+                        <li>**Role/Action:** Led end-to-end development using **WordPress**, customizing design for SEO and mobile responsiveness.</li>
+                        <li>**Key Feature:** Implemented a custom **WPForms** booking system for real-time patient scheduling.</li>
+                        <li>**Impact:** Integrated **Instamojo payment gateway** to securely process online doctor appointment payments, **reducing administrative workload and improving cash flow.**</li>
+                        <li><a href="https://srilakshmidiagnostics.org" target="_blank" class="text-blue-300 hover:text-blue-200 underline">Live URL: srilakshmidiagnostics.org</a></li>
+                    </ul>
+                    <span class="inline-block bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full font-medium">Web Development</span>
+                    <span class="inline-block bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full font-medium ml-2">Payment Integration</span>
+                </div>
+
+                <!-- Project Card 2: Customer Churn Prediction -->
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-2">Customer Churn Prediction Model</h3>
+                    <p class="text-gray-300 mb-4">A machine learning project focusing on predicting customer attrition to design proactive retention strategies.</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4 mb-4">
+                        <li>Utilized machine learning techniques on behavioral and demographic data.</li>
+                        <li>Demonstrated proficiency in data preprocessing and model evaluation.</li>
+                        <li><a href="https://github.com/Rahulkr015451" target="_blank" class="text-blue-300 hover:text-blue-200 underline">View on GitHub</a></li>
+                    </ul>
+                    <span class="inline-block bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full font-medium">Machine Learning</span>
+                    <span class="inline-block bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full font-medium ml-2">Python/Pandas</span>
+                </div>
+
+                <!-- Project Card 3: NKTL-based-text-summmarization -->
+                <div class="bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-2">NLTK-based Text Summarization System</h3>
+                    <p class="text-gray-300 mb-4">Developed a text summarization tool for enhancing text processing efficiency using key NLP libraries.</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4 mb-4">
+                        <li>Implemented using **Python** and the **NLTK** library.</li>
+                        <li>Leveraged **LexRank** and **TF-IDF** algorithms for extractive summarization.</li>
+                        <li><a href="https://github.com/Rahulkr015451" target="_blank" class="text-blue-300 hover:text-blue-200 underline">View on GitHub</a></li>
+                    </ul>
+                    <span class="inline-block bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full font-medium">NLP</span>
+                    <span class="inline-block bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full font-medium ml-2">Python</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education & Achievements Section -->
+        <section id="education">
+            <h2 class="section-title text-4xl font-bold text-white">Education & Achievements</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Education Card -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-4">Academic Background</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <p class="font-bold text-gray-200">B.E. in AI & DS (2022 - 2026)</p>
+                            <p class="text-gray-400">Channabasaveshwara Institute of Technology</p>
+                            <p class="text-sm text-gray-500">CGPA: 7.3 (Upto 6th Sem)</p>
+                        </div>
+                        <div class="border-l-4 border-gray-600 pl-4">
+                            <p class="font-bold text-gray-200">PUC (2020 - 2022)</p>
+                            <p class="text-gray-400">Vidyanidhi Independent PU College</p>
+                            <p class="text-sm text-gray-500">Score: 61%</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="text-xl font-semibold text-gray-200 mt-6 mb-2">Certifications</h4>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 ml-4">
+                        <li>
+                            AWS Cloud Practitioner Essentials (2024) 
+                            <a href="https://drive.google.com/file/d/1ssfC4Fm62AEJGQy_daqMxkUMPqaLvNpz/view" target="_blank" class="text-blue-400 hover:text-blue-300 underline">(View Certificate)</a>
+                        </li>
+                        <li>
+                            Python Certification Kaggle (2022)
+                            <a href="https://www.kaggle.com/learn/certification/raahux/python" target="_blank" class="text-blue-400 hover:text-blue-300 underline">(View Certificate)</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Achievements Card -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-xl border border-gray-700">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-4">Key Achievements</h3>
+                    <ul class="list-none space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 text-xl mr-3 mt-0.5">🏆</span>
+                            <p class="text-gray-300">Active participation in multiple national and college-level **hackathons**.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 text-xl mr-3 mt-0.5">💻</span>
+                            <p class="text-gray-300">Consistent practice on **LeetCode** for Data Structures and Algorithms.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 text-xl mr-3 mt-0.5">🧠</span>
+                            <p class="text-gray-300">Regularly solving programming challenges on **HackerRank**.</p>
+                        </li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-gray-200 mt-6 mb-2">Profiles</h4>
+                     <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/rahul-kr-85607925b" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">LinkedIn</a>
+                        <a href="https://github.com/Rahulkr015451" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">GitHub</a>
+                     </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="pb-12">
+            <h2 class="section-title text-4xl font-bold text-white">Contact Me</h2>
+            <div class="bg-gray-800 p-8 rounded-xl shadow-2xl flex flex-col sm:flex-row justify-between items-center">
+                <div class="space-y-4 mb-6 sm:mb-0">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- SVG for Mail Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </span>
+                        <a href="mailto:rahulreddykr2004@gmail.com" class="text-lg text-gray-300 hover:text-blue-400">rahulreddykr2004@gmail.com</a>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- SVG for Phone Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-3.67-4.14A19.5 19.5 0 0 1 3.9 7.42 2 2 0 0 1 4 5.24v-3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2.17a2 2 0 0 1-.59 1.42l-2.8 2.8a1 1 0 0 0-.27 1.13c.24.51.56 1.05.9 1.63a15.86 15.86 0 0 0 1.95 2.51 16.34 16.34 0 0 0 2.51 1.95c.58.34 1.12.66 1.63.9a1 1 0 0 0 1.13-.27l2.8-2.8a2 2 0 0 1 1.42-.59h2.17a2 2 0 0 1 2 2z"/></svg>
+                        </span>
+                        <span class="text-lg text-gray-300">+91 84650 41851</span>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/rahul-kr-85607925b" target="_blank" class="p-3 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors">
+                        <!-- SVG for LinkedIn Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin text-white"><path d="M16 8a6 6 0 0 0-6 6v7H6v-7a6 6 0 0 1 6-6h4z"/><rect x="2" y="2" width="4" height="12" fill="white" stroke="none"/><circle cx="4" cy="18" r="2" fill="white" stroke="none"/></svg>
+                    </a>
+                    <a href="https://github.com/Rahulkr015451" target="_blank" class="p-3 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors">
+                        <!-- SVG for GitHub Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github text-white"><path d="M15 22v-4a4.8 4.8 0 0 0-2-1c4 0 5-2 5-5.5.08-1.5-.54-2.79-1-3.5 0 0-1 0-3 2a8.73 8.73 0 0 0-5 0c-2-2-3-2-3-2-.46.71-1.08 2-1 3.5 0 3.5 1 5.5 5 5.5-1.2.33-2 1-2 2v4"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-500">
+            <p>&copy; 2024 Rahul KR Portfolio. Built for Netlify deployment.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling (optional, but nice UX) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
